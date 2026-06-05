@@ -32,13 +32,13 @@ a {
   z-index: 100;
   background: rgba(15, 23, 42, 0.85);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .nav-inner {
   max-width: 1200px;
   margin: auto;
-  padding: 1.2rem 2rem;
+  padding: 0.75rem 2rem;
 
   display: flex;
   align-items: center;
@@ -67,21 +67,22 @@ nav a:hover {
 /* HERO */
 
 .hero {
-  min-height: 100vh;
+  min-height: calc(100vh - 70px);
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
   text-align: center;
-  padding: 2rem;
+
+  padding: 4rem 2rem 2rem;
 }
 
 .hero-badge {
   padding: 0.5rem 1rem;
   border-radius: 999px;
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
   margin-bottom: 1.5rem;
   font-size: 0.9rem;
 }
@@ -89,6 +90,7 @@ nav a:hover {
 .hero h1 {
   font-size: clamp(3rem, 8vw, 6rem);
   line-height: 1;
+  margin: 0;
 }
 
 .hero h1 span {
@@ -131,11 +133,11 @@ nav a:hover {
 }
 
 .secondary {
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .secondary:hover {
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .large {
@@ -153,8 +155,8 @@ section {
   max-width: 1000px;
   margin: 3rem auto;
 
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 
   backdrop-filter: blur(10px);
 
@@ -189,8 +191,8 @@ section {
 }
 
 .feature-card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 
   border-radius: 20px;
   padding: 2rem;
@@ -201,7 +203,7 @@ section {
 
 .feature-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(96,165,250,0.5);
+  border-color: rgba(96, 165, 250, 0.5);
 }
 
 .icon {
@@ -238,14 +240,14 @@ section {
   padding: 1rem;
   border-radius: 12px;
   border: none;
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
   color: white;
   font-size: 1rem;
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  color: rgba(255,255,255,0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .contact-form textarea {
@@ -280,8 +282,8 @@ footer {
 
 .reveal {
   opacity: 0;
-  transform: translateY(40px);
-  transition: all 1s ease;
+  transform: translateY(25px);
+  transition: all 0.8s ease;
 }
 
 .reveal.show {
@@ -299,10 +301,16 @@ footer {
 
   nav {
     gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .glass {
     padding: 2rem;
+  }
+
+  .hero {
+    padding-top: 3rem;
   }
 
   .hero-buttons {
