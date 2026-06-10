@@ -102,6 +102,189 @@ export default function Home() {
         </div>
       </section>
 
+      {/* PORTFOLIO */}
+<section id="work">
+  <h2 className="section-title reveal">Featured Projects</h2>
+
+  <p className="portfolio-subtitle reveal">
+    A selection of websites, landing pages, and web applications I've designed
+    and developed.
+  </p>
+
+  <div className="portfolio-grid">
+
+    <a
+      href="https://landing-pages214.github.io/page"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="portfolio-card reveal"
+    >
+      <img
+        src="https://image.thum.io/get/width/1200/https://landing-pages214.github.io/page"
+        alt="Business Landing Page"
+      />
+      <div className="portfolio-content">
+        <span className="tag">Landing Page</span>
+        <h3>Business Landing Page</h3>
+        <p>Modern responsive website focused on conversion and clean design.</p>
+      </div>
+    </a>
+
+    <a
+      href="https://landing-pages214.github.io/page1"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="portfolio-card reveal"
+    >
+      <img
+        src="https://image.thum.io/get/width/1200/https://landing-pages214.github.io/page1"
+        alt="Corporate Website"
+      />
+      <div className="portfolio-content">
+        <span className="tag">Corporate</span>
+        <h3>Corporate Website</h3>
+        <p>Professional business website with modern layout and branding.</p>
+      </div>
+    </a>
+
+    <a
+      href="https://landing-pages214.github.io/page2"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="portfolio-card reveal"
+    >
+      <img
+        src="https://image.thum.io/get/width/1200/https://landing-pages214.github.io/page2"
+        alt="Marketing Website"
+      />
+      <div className="portfolio-content">
+        <span className="tag">Marketing</span>
+        <h3>Marketing Website</h3>
+        <p>Built to showcase services and generate customer engagement.</p>
+      </div>
+    </a>
+
+    <a
+      href="https://landing-pages214.github.io/curly-octo-broccoli"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="portfolio-card reveal"
+    >
+      <img
+        src="https://image.thum.io/get/width/1200/https://landing-pages214.github.io/curly-octo-broccoli"
+        alt="Creative Project"
+      />
+      <div className="portfolio-content">
+        <span className="tag">Creative</span>
+        <h3>Creative Web Project</h3>
+        <p>Custom responsive design with a unique visual identity.</p>
+      </div>
+    </a>
+
+    <a
+      href="https://landing-pages214.github.io/Gym"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="portfolio-card reveal"
+    >
+      <img
+        src="https://image.thum.io/get/width/1200/https://landing-pages214.github.io/Gym"
+        alt="Gym Website"
+      />
+      <div className="portfolio-content">
+        <span className="tag">Fitness</span>
+        <h3>Gym Website</h3>
+        <p>Membership-focused landing page with strong call-to-action design.</p>
+      </div>
+    </a>
+
+    <a
+      href="https://landing-pages214.github.io/Tv"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="portfolio-card reveal"
+    >
+      <img
+        src="https://image.thum.io/get/width/1200/https://landing-pages214.github.io/Tv"
+        alt="Streaming Platform"
+      />
+      <div className="portfolio-content">
+        <span className="tag">Entertainment</span>
+        <h3>Streaming Platform UI</h3>
+        <p>Modern streaming-inspired interface with immersive layouts.</p>
+      </div>
+    </a>
+
+    <a
+      href="https://landing-pages214.github.io/Kyle20000-landing-page"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="portfolio-card reveal"
+    >
+      <img
+        src="https://image.thum.io/get/width/1200/https://landing-pages214.github.io/Kyle20000-landing-page"
+        alt="Portfolio"
+      />
+      <div className="portfolio-content">
+        <span className="tag">Portfolio</span>
+        <h3>Personal Portfolio</h3>
+        <p>Professional personal website showcasing services and projects.</p>
+      </div>
+    </a>
+
+    <a
+      href="https://landing-page-nine-kappa-54.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="portfolio-card reveal"
+    >
+      <img
+        src="https://image.thum.io/get/width/1200/https://landing-page-nine-kappa-54.vercel.app/"
+        alt="Landing Page"
+      />
+      <div className="portfolio-content">
+        <span className="tag">Modern UI</span>
+        <h3>Vercel Landing Page</h3>
+        <p>Fast-loading modern website deployed on Vercel infrastructure.</p>
+      </div>
+    </a>
+
+    <a
+      href="https://wallet-landing-one.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="portfolio-card reveal"
+    >
+      <img
+        src="https://image.thum.io/get/width/1200/https://wallet-landing-one.vercel.app/"
+        alt="Wallet App"
+      />
+      <div className="portfolio-content">
+        <span className="tag">FinTech</span>
+        <h3>Wallet Landing Page</h3>
+        <p>Fintech-inspired product website with premium presentation.</p>
+      </div>
+    </a>
+
+    <a
+      href="https://www.friendcodeforum.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="portfolio-card reveal"
+    >
+      <img
+        src="https://image.thum.io/get/width/1200/https://www.friendcodeforum.com/"
+        alt="Forum"
+      />
+      <div className="portfolio-content">
+        <span className="tag">Community</span>
+        <h3>Friend Code Forum</h3>
+        <p>Online community platform focused on discussion and engagement.</p>
+      </div>
+    </a>
+   </div>
+ </section>
+
       {/* CONTACT */}
       <section id="contact" className="glass reveal">
         <h2>Contact</h2>
