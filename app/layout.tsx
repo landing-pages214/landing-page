@@ -1,9 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Kyle Goertzen",
+  title: "Andrea Horton",
   description:
-    "Landing Page",
+    "Blog Page",
 };
 
 export default function RootLayout({
