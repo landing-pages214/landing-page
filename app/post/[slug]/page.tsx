@@ -1,34 +1,24 @@
 import { db } from "@/lib/db";
-import { notFound } from "next/navigation";
 
-export default function Post({
-  params,
-}: {
-  params: {
-    slug: string;
-  };
-}) {
-  const post: any = db
-    .prepare(
-      "SELECT * FROM posts WHERE slug=?"
-    )
-    .get(params.slug);
+type Props = {
+  params: Promise<{ slug: string }>;
+};
+
+export default async function Page({ params }: Props) {
+  const { slug } = await params;
+
+  const post = db
+    .prepare("SELECT * FROM posts WHERE slug = ?")
+    .get(slug);
 
   if (!post) {
-    notFound();
+    return <div>Post not found</div>;
   }
 
   return (
-    <main style={{ padding: 40 }}>
+    <div>
       <h1>{post.title}</h1>
-
-      <div
-        style={{
-          whiteSpace: "pre-wrap",
-        }}
-      >
-        {post.content}
-      </div>
-    </main>
+      <p>{post.content}</p>
+    </div>
   );
 }
