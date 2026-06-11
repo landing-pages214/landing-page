@@ -1,25 +1,91 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
+html, body {
+  background: #0b0f19;
+  color: #e5e7eb;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  line-height: 1.6;
 }
 
-body {
-  background: white;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
+/* LAYOUT */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
 }
 
-a {
-  color: inherit;
+/* HEADER */
+.header {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #1f2937;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  margin-top: 8px;
+  color: #9ca3af;
+  font-size: 16px;
+}
+
+/* POSTS */
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* POST CARD */
+.post {
+  padding: 20px;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  transition: all 0.2s ease;
+}
+
+.post:hover {
+  transform: translateY(-2px);
+  border-color: #374151;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* TITLE */
+.postTitle {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #f9fafb;
+}
+
+/* LINK */
+.postLink {
   text-decoration: none;
 }
 
-.page {
-  width: 100%;
+/* EXCERPT */
+.postExcerpt {
+  color: #9ca3af;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+/* READ MORE */
+.readMore {
+  color: #60a5fa;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.readMore:hover {
+  text-decoration: underline;
 }
