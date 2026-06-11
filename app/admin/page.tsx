@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { redirect } from "next/navigation";
 import { isLoggedIn } from "@/lib/auth";
 import { db } from "@/lib/db";
