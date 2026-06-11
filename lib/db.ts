@@ -10,7 +10,9 @@ if (!fs.existsSync(dbDir)) {
   fs.mkdirSync(dbDir, { recursive: true });
 }
 
-const dbPath = path.join(dbDir, "blog.db");
+const dbPath =
+  process.env.DB_PATH ||
+  path.join(process.cwd(), "database", "blog.db");
 
 export const db = new Database(dbPath);
 
