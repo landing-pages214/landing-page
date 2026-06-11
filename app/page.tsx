@@ -3,36 +3,35 @@ import { db } from "@/lib/db";
 
 export default function Home() {
   const posts: any[] = db
-    .prepare(
-      "SELECT * FROM posts ORDER BY id DESC"
-    )
+    .prepare("SELECT * FROM posts ORDER BY id DESC")
     .all();
 
   return (
-    <main style={{ padding: 40 }}>
-      <h1>
-        Andrea Horton Blog
-      </h1>
+    <main className="container">
+      <header className="header">
+        <h1 className="title">Andrea Horton Blog</h1>
+        <p className="subtitle">
+          Thoughts, updates, and writing
+        </p>
+      </header>
 
-      {posts.map((post) => (
-        <article key={post.id}>
-          <h2>
-            <a
-              href={`/post/${post.slug}`}
-            >
-              {post.title}
+      <section className="posts">
+        {posts.map((post) => (
+          <article key={post.id} className="post">
+            <a href={`/post/${post.slug}`} className="postLink">
+              <h2 className="postTitle">{post.title}</h2>
             </a>
-          </h2>
 
-          <p>
-            {post.content.substring(
-              0,
-              200
-            )}
-            ...
-          </p>
-        </article>
-      ))}
+            <p className="postExcerpt">
+              {post.content.substring(0, 200)}...
+            </p>
+
+            <a href={`/post/${post.slug}`} className="readMore">
+              Read more →
+            </a>
+          </article>
+        ))}
+      </section>
     </main>
   );
 }
