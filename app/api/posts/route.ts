@@ -1,4 +1,5 @@
 import { db } from "@/lib/db";
+import { isLoggedIn } from "@/lib/auth";
 
 export async function GET() {
   const posts = db
@@ -11,8 +12,14 @@ export async function GET() {
 }
 
 export async function POST(req: Request) {
-  const { title, content } =
-    await req.json();
+  if (!(await isLoggedIn())) {
+    return Response.json(
+      { error: "Unauthorized" },
+      { status: 401 }
+    );
+  }
+
+  const { title, content } = await req.json();
 
   const slug = title
     .toLowerCase()
