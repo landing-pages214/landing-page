@@ -34,14 +34,12 @@ export async function POST(req: Request) {
     success: true,
   });
 
-  response.cookies.set(
-    "admin",
-    "true",
-    {
-      httpOnly: true,
-      path: "/",
-    }
-  );
+  response.cookies.set("admin", "true", {
+    httpOnly: true,
+    path: "/",
+    sameSite: "lax",
+    secure: process.env.NODE_ENV === "production",
+  });
 
   return response;
 }
